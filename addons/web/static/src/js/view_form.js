@@ -2587,7 +2587,7 @@ instance.web.form.FieldCharDomain = instance.web.form.AbstractField.extend(insta
         }
         this.pop.select_element(
             model, {
-                initial_ids: this.get('effective_readonly') ? (cur_domain ? cur_domain[0][2] : undefined): undefined,
+                initial_ids: this.get('effective_readonly') ? (cur_domain ? (cur_domain[0]? cur_domain[0][2]: undefined) : undefined): undefined,
                 title: this.get('effective_readonly') ? 'Selected records' : 'Select records...',
                 readonly: this.get('effective_readonly'),
                 disable_multiple_selection: this.get('effective_readonly'),
