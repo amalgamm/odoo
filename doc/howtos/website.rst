@@ -1,7 +1,7 @@
 .. queue:: website/series
 
 ==================
-Building a website
+Building a Website
 ==================
 
 .. warning::
@@ -305,7 +305,7 @@ interfaces. Change the *person* template to use ``t-field``:
 
 .. patch::
 
-Restart Odoo and upgrade the modile, there is now a placeholder under the
+Restart Odoo and upgrade the module, there is now a placeholder under the
 teacher's name and a new zone for blocks in :guilabel:`Edit` mode. Content
 dropped there is stored in the correspoding teacher's ``biography`` field, and
 thus specific to that teacher.
@@ -457,7 +457,7 @@ though they may have to be looked for.
     * to extend a model in-place, it's :attr:`inherited
       <openerp.models.Model._inherit>` without giving it a new
       :attr:`~openerp.models.Model._name`
-    * ``product.template`` already uses the discussions system, so we don't
+    * ``product.template`` already uses the discussions system, so we
       can remove it from our extension model
     * we're creating our courses as *published* by default so they can be
       seen without having to log in
